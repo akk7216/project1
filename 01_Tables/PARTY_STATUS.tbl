@@ -1,9 +1,12 @@
 #This table used to save Party and Party Status relation
 #Version 0.1
+#Version 0.2 added Start and End Date columns
 CREATE TABLE PARTY_PARTY_STATUS
 AS
 (
 PARTY_ID INT
 ,PATRY_PARTY_STATUS_CD VARCHAR(10)
+,PARTY_STATUS_START_DATE DATE     --0.2
+,PARTY_STATUS_END_DATE DATE       --0.2
 )
 PRIMARY INDEX (PARTY_ID);
