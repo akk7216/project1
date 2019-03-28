@@ -2,7 +2,8 @@
 #used to save Party related Information
 #Version 0.1
 #Version 0.2 added party Start and end Date
-#Version 0.3 Added From and Till date 
+#Version 0.3 Added From and Till date
+#Version 0.4 Added secondary index 
 CREATE TABLE PARTY 
 AS
 (
@@ -13,4 +14,5 @@ PARTY_ID INT
 ,FROM_DATE DATE          --0.3
 ,TILL_DATE DATE           --0.3
 )
-PRIMARY INDEX (PARTY_ID);
+PRIMARY INDEX (PARTY_ID)
+INDEX (PARTY_ID,PARTY_NAME);
