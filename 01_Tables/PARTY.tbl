@@ -2,12 +2,14 @@
 #used to save Party related Information
 #Version 0.1
 #Version 0.2 added party Start and end Date
-#Version 0.3 Added From and Till date 
+#Version 0.3 Added From and Till date
+#Version 0.4 Added Party Gender 
 CREATE TABLE PARTY 
 AS
 (
 PARTY_ID INT
 ,PARTY_NAME VARCHAR(20)
+,PARTY_GENDER VARCHAR(1)
 ,PARTY_START_DATE DATE   --0.2
 ,PARTY_END_DATE	DATE     --0.2
 ,FROM_DATE DATE          --0.3
