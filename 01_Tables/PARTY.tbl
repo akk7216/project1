@@ -4,15 +4,17 @@
 #Version 0.2 added party Start and end Date
 #Version 0.3 Added From and Till date
 #Version 0.4 Added secondary index 
+#Version 0.5 Added Party Gender 
 CREATE TABLE PARTY 
 AS
 (
 PARTY_ID INT
 ,PARTY_NAME VARCHAR(20)
+,PARTY_GENDER VARCHAR(1) --0.5
 ,PARTY_START_DATE DATE   --0.2
 ,PARTY_END_DATE	DATE     --0.2
 ,FROM_DATE DATE          --0.3
 ,TILL_DATE DATE           --0.3
 )
 PRIMARY INDEX (PARTY_ID)
-INDEX (PARTY_ID,PARTY_NAME);
+INDEX (PARTY_ID,PARTY_NAME); --0.4

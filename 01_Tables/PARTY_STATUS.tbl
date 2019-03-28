@@ -1,0 +1,9 @@
+#This table used to save Party and Party Status relation
+#Version 0.1
+CREATE TABLE PARTY_PARTY_STATUS
+AS
+(
+PARTY_ID INT
+,PATRY_PARTY_STATUS_CD VARCHAR(10)
+)
+PRIMARY INDEX (PARTY_ID);
