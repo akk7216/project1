@@ -1,7 +1,8 @@
 #This is the PARTY table
 #used to save Party related Information
 #Version 0.1
-#Version 0.2 added from new123branch
+#Version 0.2 
+#Version 0.3 Added From and Till date 
 CREATE TABLE PARTY 
 AS
 (
@@ -9,5 +10,7 @@ PARTY_ID INT
 ,PARTY_NAME VARCHAR(20)
 ,PARTY_START_DATE DATE   --0.2
 ,PARTY_END_DATE	DATE     --0.2
+,FROM_DATE DATE          --0.3
+,TILL_DATE DATE           --0.3
 )
 PRIMARY INDEX (PARTY_ID);
